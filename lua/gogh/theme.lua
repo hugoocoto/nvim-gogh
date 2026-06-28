@@ -14,9 +14,9 @@ function M.setup()
         CursorLine                       = { link = "ColorColumn" },                     -- Screen-line at the cursor, when 'cursorline' is set. Low-priority if foreground (ctermfg OR guifg) is not set.
         Directory                        = { fg = palette.blue },                        -- Directory names (and other special names in listings).
         DiffAdd                          = { fg = palette.bg_alt, bg = palette.green },  -- Diff mode: Added line. |diff.txt|
-        DiffChange                       = { fg = palette.bg_alt, bg = palette.yellow }, -- Diff mode: Changed line. |diff.txt|
+        DiffChange                       = { bg = palette.bg_alt },                      -- Diff mode: Changed line. |diff.txt|
         DiffDelete                       = { fg = palette.bg_alt, bg = palette.red },    -- Diff mode: Deleted line. |diff.txt|
-        DiffText                         = { fg = palette.bg_alt, bg = palette.orange }, -- Diff mode: Changed text within a changed line. |diff.txt|
+        DiffText                         = { fg = palette.yellow, bg = palette.bg_alt }, -- Diff mode: Changed text within a changed line. |diff.txt|
         DiffTextAdd                      = { link = "DiffAdd" },                         -- Diff mode: Added text within a changed line.  Linked to |hl-DiffText| by default. |diff.txt|
         EndOfBuffer                      = { fg = palette.muted },                       -- Filler lines (~) after the last line in the buffer. By default, this is highlighted like |hl-NonText|.
         TermCursor                       = {},                                           -- Cursor in a focused terminal.
