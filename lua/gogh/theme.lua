@@ -226,8 +226,7 @@ function M.setup()
         healthWarning                    = { fg = palette.yellow },                      -- Health check: warning
 
         -- MiniPick-hl-groups
-
-        Pmenu                            = { fg = palette.fg, bg = palette.bg_alt },    -- Popup menu: Normal item.
+        Pmenu                            = { fg = palette.muted, bg = palette.bg_alt }, -- Popup menu: Normal item.
         PmenuBorder                      = { fg = palette.muted, bg = palette.bg_alt }, -- Popup menu: border of popup menu.
         PmenuExtra                       = { fg = palette.muted },                      -- Popup menu: Normal item \"extra text\".
         PmenuExtraSel                    = { fg = palette.muted },                      -- Popup menu: Selected item \"extra text\".
@@ -249,14 +248,14 @@ function M.setup()
         MiniPickIconDirectory            = {},                                          -- default icon for directory.
         MiniPickIconFile                 = {},                                          -- default icon for file.
         MiniPickMatchCurrent             = { link = "PmenuSel" },                       -- current matched item.
-        MiniPickMatchMarked              = { link = "PmenuSel" },                       -- marked matched items.
-        MiniPickMatchRanges              = { link = "PmenuSel" },                       -- ranges matching query elements.
+        MiniPickMatchMarked              = { fg = palette.fg },                         -- marked matched items.
+        MiniPickMatchRanges              = { fg = palette.fg },                         -- ranges matching query elements.
         MiniPickNormal                   = { link = "Pmenu" },                          -- basic foreground/background highlighting.
-        MiniPickPreviewLine              = { link = "Visual" },                         -- target line in preview.
-        MiniPickPreviewRegion            = { link = "Visual" },                         -- target region in preview.
-        MiniPickPrompt                   = { link = "Normal" },                         -- prompt.
-        MiniPickPromptCaret              = {},                                          -- caret in prompt.
-        MiniPickPromptPrefix             = {},                                          -- prefix of the prompt.
+        MiniPickPreviewLine              = { link = "Pmenu" },                          -- target line in preview.
+        MiniPickPreviewRegion            = { link = "Pmenu" },                          -- target region in preview.
+        MiniPickPrompt                   = { link = "Pmenu" },                          -- prompt.
+        MiniPickPromptCaret              = { bg = palette.fg, fg = palette.bg_alt },    -- caret in prompt.
+        MiniPickPromptPrefix             = { link = "Pmenu" },                          -- prefix of the prompt.
     }
 
     for group, opts in pairs(groups) do
