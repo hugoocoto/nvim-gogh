@@ -1,17 +1,15 @@
 return {
-  bg        = "#1e1e2e", -- Azul noche muy oscuro (Fondo principal)
-  bg_alt    = "#28283e", -- Fondo secundario (Paneles, menús)
-  fg        = "#cdd6f4", -- Texto principal claro
-  fg_alt    = "#a6adc8", -- Texto secundario/apagado
-  comment   = "#6c7086", -- Gris azulado para comentarios
-  selection = "#45475a", -- Color de selección visual
-  border    = "#313244", -- Bordes de ventanas
+    -- bg        = "#272727",
+    bg        = "NONE",    -- Bg
+    bg_alt    = "#141617", -- Bar, Menu, ...
+    fg        = "#ddc7a1", -- Text (fg)
+    muted     = "#a89984", -- Comments, line numbers, dimmed text
 
-  blue      = "#89b4fa", -- Azul "Noche Estrellada" (Funciones)
-  cyan      = "#94e2d5", -- Cian suave (Operadores, Propiedades)
-  green     = "#a6e3a1", -- Verde ciprés (Cadenas de texto)
-  yellow    = "#f9e2af", -- Amarillo "Girasol" (Tipos, Clases)
-  orange    = "#fab387", -- Naranja (Números, Booleanos)
-  red       = "#f38ba8", -- Rojo (Errores, Variables integradas)
-  magenta   = "#cba6f7", -- Morado (Palabras clave, Condicionales)
+    blue      = "#7daea3", -- Functions
+    cyan      = "#89b482", -- None
+    green     = "#a9b665", -- Strings
+    yellow    = "#d8a657", -- Warnings
+    orange    = "#e78a4e", -- Types
+    red       = "#ea6962", -- Errors, Constants
+    magenta   = "#d3869b", -- Kwords
 }
