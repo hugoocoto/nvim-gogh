@@ -8,6 +8,7 @@ function M.setup()
         Conceal                          = {},                                           -- Placeholder characters substituted for concealed text (see 'conceallevel').
         CurSearch                        = { link = "Search" },                          -- Current match for the last search pattern (see 'hlsearch'). Note: This is correct after a search, but may get outdated if changes are made or the screen is redrawn.
         Cursor                           = {},                                           -- Character under the cursor.
+        MCursor                          = { bg = palette.blue, fg = palette.bg },       -- MultiCursor.
         lCursor                          = {},                                           -- Character under the cursor when |language-mapping| is used (see 'guicursor').
         CursorIM                         = {},                                           -- Like Cursor, but used when in IME mode. *CursorIM*
         CursorColumn                     = { link = "ColorColumn" },                     -- Screen-column at the cursor, when 'cursorcolumn' is set.
